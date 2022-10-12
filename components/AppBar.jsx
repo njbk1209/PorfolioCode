@@ -50,7 +50,7 @@ const AppBar = () => {
                         smooth={true}
                         offset={-70}
                         duration={600}
-                        className='text-white hover:text-emerald-500 px-3 py-2 rounded text-sm font-medium'
+                        className='hover:cursor-pointer text-white hover:text-emerald-500 px-3 py-2 rounded text-sm font-medium'
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}

@@ -1,4 +1,15 @@
 import React from 'react'
+import Image from 'next/image'
+import porfolioCode from '../public/portfolioCode.png'
+
+
+const projects = [
+    {
+        name: 'Porfolio Code',
+        img: porfolioCode,
+        src: 'https://github.com/njbk1209/PorfolioCode'
+    }
+]
 
 const Portfolio = () => {
     return (
@@ -10,12 +21,20 @@ const Portfolio = () => {
 
             </div>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-5 w-10/12 m-auto my-4 ">
-                <div className='bg-violet-500 h-64 rounded-lg shadow-lg shadow-slate-500'>01</div>
-                <div className='bg-violet-500 h-64 rounded-lg shadow-lg shadow-slate-500'>02</div>
-                <div className='bg-violet-500 h-64 rounded-lg shadow-lg shadow-slate-500'>03</div>
-                <div className='bg-violet-500 h-64 rounded-lg shadow-lg shadow-slate-500'>04</div>
-                <div className='bg-violet-500 h-64 rounded-lg shadow-lg shadow-slate-500'>05</div>
-                <div className='bg-violet-500 h-64 rounded-lg shadow-lg shadow-slate-500'>06</div>
+                {
+                    projects.map((project) => (
+                        <div key={project.name} className='h-60 rounded-lg shadow-lg shadow-slate-500 hover:cursor-pointer hover:scale-105 transition delay-50'>
+                            <a href={project.src}>
+                                <Image
+                                    src={project.img}
+                                    alt="s"
+                                    className='block rounded-lg '
+                                />
+                            </a>
+                            <h2 className='text-emerald-500 text-center py-2 font-medium'>{project.name}</h2>
+                        </div>
+                    ))
+                }
             </div>
         </div>
     )
