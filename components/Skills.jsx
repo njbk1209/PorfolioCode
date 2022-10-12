@@ -74,7 +74,7 @@ const Skills = () => {
                 <div className='h-0.5 w-11/12 m-auto bg-gradient-to-r from-slate-500 via-emerald-500 to-slate-500'>
 
                 </div>
-                <div class="grid grid-cols-2 lg:grid-cols-6 md:grid-cols-4 justify-items-stretch gap-16 w-10/12 m-auto py-8">
+                <div className="grid grid-cols-2 lg:grid-cols-6 md:grid-cols-4 justify-items-stretch gap-16 w-10/12 m-auto py-8">
 
                     {
                         skiles.map((skil, idx) => (

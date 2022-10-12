@@ -1,4 +1,4 @@
-import Aboutme from "../components/Aboutme";
+
 import Contacts from "../components/Contacts";
 import Experience from "../components/Experience";
 import Footer from "../components/Footer";

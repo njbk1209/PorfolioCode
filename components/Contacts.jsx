@@ -89,7 +89,7 @@ const Contacts = () => {
                         >
                             {formik => (
                                 <form onSubmit={formik.handleSubmit}>
-                                    <div class="grid grid-cols-2 gap-x-3 gap-y-1 md:w-9/12">
+                                    <div className="grid grid-cols-2 gap-x-3 gap-y-1 md:w-9/12">
                                         <div>
                                             <label className='text-base font-medium block'>Full name</label>
                                             <input className="rounded w-full h-9 text-slate-800" type="text" name="from_name"
